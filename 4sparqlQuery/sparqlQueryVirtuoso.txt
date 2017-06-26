@@ -1,0 +1,21 @@
+PREFIX pb: <http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#>
+		PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+		PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+		SELECT  DISTINCT ?Bundesland ?FlaecheNaturschutzgebiete (SAMPLE(?AnkuenfteCampingplatz ) AS ?Ankuenfte) (SAMPLE(?AnmeldungenWohnmobile ) AS ?Anmeldungen)
+
+		WHERE {
+  			?bundeslandRes a pb:Bundesland ;
+   			pb:name ?Bundesland ;
+  			pb:naturschutz ?FlaecheNaturschutzgebiete .
+
+  			?campingplatzRes a pb:Campingplatz ;
+   			pb:ankunft ?AnkuenfteCampingplatz .
+
+  			?wohnmobilRes a pb:Wohnmobil ;
+   			pb:anmeldung ?AnmeldungenWohnmobile .
+
+			} 
+
+GROUP BY ?Bundesland ?FlaecheNaturschutzgebiete
+ORDER BY ?Bundesland
