@@ -1,0 +1,275 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:pb="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Bundesland -->
+
+    <owl:ObjectProperty rdf:about="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Bundesland">
+        <rdfs:domain rdf:resource="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Campingplatz"/>
+        <rdfs:comment xml:lang="de">Zuordnung Bundesland</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+    <!-- http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#ankunft  -->
+
+    <owl:DatatypeProperty rdf:about="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#ankunft">
+        <rdfs:domain rdf:resource="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Campingplatz"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment xml:lang="de">Anfuenfte auf Campingplaetzen je Bundesland</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Campingplatz -->
+
+    <owl:Class rdf:about="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Campingplatz"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Camping_Baden-Wuerttemberg -->
+
+    <owl:NamedIndividual rdf:about="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Camping_Baden-Wuerttemberg">
+        <rdf:type rdf:resource="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Campingplatz"/>
+        <pb:Bundesland rdf:resource="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Baden-Wuerttemberg"/>
+        <pb:ankunft>715951</pb:ankunft>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Camping_Bayern -->
+
+    <owl:NamedIndividual rdf:about="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Camping_Bayern">
+        <rdf:type rdf:resource="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Campingplatz"/>
+        <pb:Bundesland rdf:resource="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Bayern"/>
+        <pb:ankunft>1126559</pb:ankunft>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Camping_Brandenburg -->
+
+    <owl:NamedIndividual rdf:about="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Camping_Brandenburg">
+        <rdf:type rdf:resource="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Campingplatz"/>
+        <pb:Bundesland rdf:resource="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Brandenburg"/>
+        <pb:ankunft>281249</pb:ankunft>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Camping_Hessen -->
+
+    <owl:NamedIndividual rdf:about="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Camping_Hessen">
+        <rdf:type rdf:resource="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Campingplatz"/>
+        <pb:Bundesland rdf:resource="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Hessen"/>
+        <pb:ankunft>331102</pb:ankunft>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Camping_Mecklenburg-Vorpommern -->
+
+    <owl:NamedIndividual rdf:about="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Camping_Mecklenburg-Vorpommern">
+        <rdf:type rdf:resource="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Campingplatz"/>
+        <pb:Bundesland rdf:resource="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Mecklenburg-Vorpommern"/>
+        <pb:ankunft>863707</pb:ankunft>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Camping_Niedersachsen -->
+
+    <owl:NamedIndividual rdf:about="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Camping_Niedersachsen">
+        <rdf:type rdf:resource="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Campingplatz"/>
+        <pb:Bundesland rdf:resource="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Niedersachsen"/>
+        <pb:ankunft>928044</pb:ankunft>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Camping_Nordrhein-Westfalen -->
+
+    <owl:NamedIndividual rdf:about="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Camping_Nordrhein-Westfalen">
+        <rdf:type rdf:resource="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Campingplatz"/>
+        <pb:Bundesland rdf:resource="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Nordrhein-Westfalen"/>
+        <pb:ankunft>487548</pb:ankunft>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Camping_Rheinland-Pfalz -->
+
+    <owl:NamedIndividual rdf:about="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Camping_Rheinland-Pfalz">
+        <rdf:type rdf:resource="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Campingplatz"/>
+        <pb:Bundesland rdf:resource="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Rheinland-Pfalz"/>
+        <pb:ankunft>475256</pb:ankunft>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Camping_Sachsen -->
+
+    <owl:NamedIndividual rdf:about="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Camping_Sachsen">
+        <rdf:type rdf:resource="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Campingplatz"/>
+        <pb:Bundesland rdf:resource="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Sachsen"/>
+        <pb:ankunft>166255</pb:ankunft>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Camping_Sachsen-Anhalt -->
+
+    <owl:NamedIndividual rdf:about="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Camping_Sachsen-Anhalt">
+        <rdf:type rdf:resource="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Campingplatz"/>
+        <pb:Bundesland rdf:resource="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Sachsen-Anhalt"/>
+        <pb:ankunft>113214</pb:ankunft>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Camping_Schleswig-Holstein -->
+
+    <owl:NamedIndividual rdf:about="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Camping_Schleswig-Holstein">
+        <rdf:type rdf:resource="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Campingplatz"/>
+        <pb:Bundesland rdf:resource="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Schleswig-Holstein"/>
+        <pb:ankunft>847674</pb:ankunft>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Camping_Thueringen -->
+
+    <owl:NamedIndividual rdf:about="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Camping_Thueringen">
+        <rdf:type rdf:resource="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Campingplatz"/>
+        <pb:Bundesland rdf:resource="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Thueringen"/>
+        <pb:ankunft>160530</pb:ankunft>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Baden-Wuerttemberg -->
+
+    <owl:NamedIndividual rdf:about="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Baden-Wuerttemberg"/>
+    
+
+
+    <!-- http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Bayern -->
+
+    <owl:NamedIndividual rdf:about="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Bayern"/>
+    
+
+
+    <!-- http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Brandenburg -->
+
+    <owl:NamedIndividual rdf:about="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Brandenburg"/>
+    
+
+
+    <!-- http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Hessen -->
+
+    <owl:NamedIndividual rdf:about="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Hessen"/>
+    
+
+
+    <!-- http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Mecklenburg-Vorpommern -->
+
+    <owl:NamedIndividual rdf:about="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Mecklenburg-Vorpommern"/>
+    
+
+
+    <!-- http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Niedersachsen -->
+
+    <owl:NamedIndividual rdf:about="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Niedersachsen"/>
+    
+
+
+    <!-- http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Nordrhein-Westfalen -->
+
+    <owl:NamedIndividual rdf:about="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Nordrhein-Westfalen"/>
+    
+
+
+    <!-- http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Rheinland-Pfalz -->
+
+    <owl:NamedIndividual rdf:about="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Rheinland-Pfalz"/>
+    
+
+
+    <!-- http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Sachsen -->
+
+    <owl:NamedIndividual rdf:about="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Sachsen"/>
+    
+
+
+    <!-- http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Sachsen-Anhalt -->
+
+    <owl:NamedIndividual rdf:about="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Sachsen-Anhalt"/>
+    
+
+
+    <!-- http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Schleswig-Holstein -->
+
+    <owl:NamedIndividual rdf:about="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Schleswig-Holstein"/>
+    
+
+
+    <!-- http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Thueringen -->
+
+    <owl:NamedIndividual rdf:about="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Thueringen"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

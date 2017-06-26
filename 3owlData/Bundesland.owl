@@ -1,0 +1,193 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:pb="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+     <!-- http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#name -->
+     
+    <owl:DatatypeProperty rdf:about="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#name">
+        <rdfs:domain rdf:resource="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Bundesland"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="de">Bezeichnung der Bundeslaender</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#naturschutz -->
+
+    <owl:DatatypeProperty rdf:about="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#naturschutz">
+        <rdfs:domain rdf:resource="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Bundesland"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment xml:lang="de">Flaeche von Naturschutzgebieten (in Quadratkilometer) der Bundeslaender</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Bundesland -->
+
+    <owl:Class rdf:about="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Bundesland"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Baden-Wuerttemberg -->
+
+    <owl:NamedIndividual rdf:about="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Baden-Wuerttemberg">
+        <rdf:type rdf:resource="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Bundesland"/>
+        <pb:name>Baden-Wuerttemberg</pb:name>
+        <pb:naturschutz>854</pb:naturschutz>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Bayern -->
+
+    <owl:NamedIndividual rdf:about="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Bayern">
+        <rdf:type rdf:resource="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Bundesland"/>
+        <pb:name>Bayern</pb:name>
+        <pb:naturschutz>1590</pb:naturschutz>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Brandenburg -->
+
+    <owl:NamedIndividual rdf:about="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Brandenburg">
+        <rdf:type rdf:resource="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Bundesland"/>
+        <pb:name>Brandenburg</pb:name>
+        <pb:naturschutz>2211</pb:naturschutz>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Hessen -->
+
+    <owl:NamedIndividual rdf:about="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Hessen">
+        <rdf:type rdf:resource="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Bundesland"/>
+        <pb:name>Hessen</pb:name>
+        <pb:naturschutz>385</pb:naturschutz>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Mecklenburg-Vorpommern -->
+
+    <owl:NamedIndividual rdf:about="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Mecklenburg-Vorpommern">
+        <rdf:type rdf:resource="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Bundesland"/>
+        <pb:name>Mecklenburg-Vorpommern</pb:name>
+        <pb:naturschutz>889</pb:naturschutz>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Niedersachsen -->
+
+    <owl:NamedIndividual rdf:about="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Niedersachsen">
+        <rdf:type rdf:resource="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Bundesland"/>
+        <pb:name>Niedersachsen</pb:name>
+        <pb:naturschutz>1853</pb:naturschutz>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Nordrhein-Westfalen -->
+
+    <owl:NamedIndividual rdf:about="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Nordrhein-Westfalen">
+        <rdf:type rdf:resource="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Bundesland"/>
+        <pb:name>Nordrhein-Westfalen</pb:name>
+        <pb:naturschutz>2559</pb:naturschutz>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Rheinland-Pfalz -->
+
+    <owl:NamedIndividual rdf:about="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Rheinland-Pfalz">
+        <rdf:type rdf:resource="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Bundesland"/>
+        <pb:name>Rheinland-Pfalz</pb:name>
+        <pb:naturschutz>375</pb:naturschutz>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Sachsen -->
+
+    <owl:NamedIndividual rdf:about="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Sachsen">
+        <rdf:type rdf:resource="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Bundesland"/>
+        <pb:name>Sachsen</pb:name>
+        <pb:naturschutz>517</pb:naturschutz>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Sachsen-Anhalt -->
+
+    <owl:NamedIndividual rdf:about="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Sachsen-Anhalt">
+        <rdf:type rdf:resource="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Bundesland"/>
+        <pb:name>Sachsen-Anhalt</pb:name>
+        <pb:naturschutz>638</pb:naturschutz>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Schleswig-Holstein -->
+
+    <owl:NamedIndividual rdf:about="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Schleswig-Holstein">
+        <rdf:type rdf:resource="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Bundesland"/>
+        <pb:name>Schleswig-Holstein</pb:name>
+        <pb:naturschutz>463</pb:naturschutz>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Thueringen -->
+
+    <owl:NamedIndividual rdf:about="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Thueringen">
+        <rdf:type rdf:resource="http://www.imn.htwk-leipzig.de/~pb/semanticweb/ontologie#Bundesland"/>
+        <pb:name>Thüringen</pb:name>
+        <pb:naturschutz>473</pb:naturschutz>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
