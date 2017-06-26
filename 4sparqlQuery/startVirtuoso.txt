@@ -1,0 +1,18 @@
+https://virtuoso.openlinksw.com
+
+http://carsten.io/virtuoso-os-on-mac-os/
+
+#########################
+
+cd /usr/local/Cellar/virtuoso/7.2.4.2/var/lib/virtuoso/db/
+
+virtuoso-t -f
+
+http://localhost:8890
+
+
+##########################
+
+Login: dba
+
+##########################
